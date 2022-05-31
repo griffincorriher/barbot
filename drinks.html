@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Bar Bot v1</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="/jquery-3.6.0.min.js">
+        </script>
+    </head>
+    <body>
+        <nav class="navbar-container">
+            <ul class="list">
+                <li class="active"><a href="/drinks">Drinks</a></li>
+                <li class="active"><a href="/setup">Setup</a></li>
+                <li class="active"><a href="/about">About</a></li>
+            </ul>
+        </nav>
+        <div class="wrapper">
+            <div class="dropdown">
+                <h1>
+                    Alcoholic drinks
+                </h1>
+                <form id="frm1" action="/get">
+                    <div class="custom-select" style="width:200px;">
+                        <select id="alcoholic" name="alcoholic"></select><br>
+                    </div>
+                    <input type="submit" value="Make drink">
+                </form>
+            </div>
+            <div class="dropdown"> 
+                <h1>
+                    Non-alcoholic drinks
+                </h1>
+                <form id="frm2" action="/get">
+                    <div class="custom-select" style="width:200px;">
+                        <select id="nonalcoholic" name="nonalcoholic"></select><br>
+                    </div>
+                    <input type="submit" value="Make drink">
+                </form>
+            </div>
+            <br>
+            <div>
+                <h3>
+                    Currently making:
+                    <span id="current-drink">%DRINK%</span>
+                </h3>
+                <h3>
+                    Drinks in queue:
+                    <span id="drink-queue">%QUEUE%</span>
+                </h3>
+            </div>
+        </div>
+        <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>

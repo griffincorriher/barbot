@@ -1,0 +1,104 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+  color: white
+}
+
+.navbar-container {
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+  border-radius: .5rem;
+  width: max-content;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.list {
+  color: black;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+
+.list a {
+  color: rgb(65, 65, 65);
+  text-decoration: none;
+  padding: 1em;
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a:hover {
+  color: black;
+}
+
+
+.list .text {
+  font-size: .8em;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 500ms ease-in-out;
+  position: absolute;
+}
+
+.list .active .text {
+  pointer-events: all;
+  opacity: 1;
+}
+
+.info{
+  width: max-content;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.box{
+  display: flex;
+  width: auto;
+  overflow-wrap: break-word;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper .dropdown{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+select#alcoholic{
+  background-color: #333;
+  color:white;
+  font-size: 1em;
+}
+
+select#nonalcoholic{
+  background-color: #333;
+  color:white;
+  font-size: 1em;
+}
+
+select optgroup{
+  background:#1cd30034;
+  color:white;
+  font-style:normal;
+  font-weight:normal;
+}

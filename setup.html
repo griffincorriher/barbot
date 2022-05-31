@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Bar Bot v1</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <nav class="navbar-container">
+            <ul class="list">
+                <li class="active"><a href="/drinks">Drinks</a></li>
+                <li class="active"><a href="/setup">Setup</a></li>
+                <li class="active"><a href="/about">About</a></li>
+            </ul>
+        </nav>
+    <div class="info">
+        <form action="/get">
+            <h1>Number of liquors:</h1> <input type="number" name="numLiquor">
+            <input type="submit" value="Submit">
+        </form><br>
+        <form action="/get">
+            <h1>Number of mixers:</h1> <input type="number" name="numMixer">
+            <input type="submit" value="Submit">
+        </form><br>
+        <div class="system">
+            <h3>
+                System : {{system}}
+            </h3>
+            <h3>
+                Status: {{status}}
+            </h3>
+        </div>
+    </div>
+  </body>
+</html>
