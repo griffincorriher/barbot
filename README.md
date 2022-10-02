@@ -6,6 +6,3 @@ This is a work in progress. Will utilize a Wemos D1 mini to control stepper moto
 Web interface            |  GIF of web interface
 :-------------------------:|:-------------------------:
  ![](https://github.com/griffincorriher/barbot/blob/main/pictures/308587683_1821627898178063_5604105830670200742_n.jpg) | ![](https://github.com/griffincorriher/barbot/blob/main/pictures/barbot.gif)
-
-
-<img src="" width="350"/>
